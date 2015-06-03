@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Academia de Kung Fu e Boxe Chinês - Kwan Kun Mooca";
+}
+
+<div class="container-fluid fundo" id="fundo">
+    <header>
+        <div class="container-fluid">
+            <br>
+            <img src="~/Content/img/header_kwan_kun.png" alt="Kung Fu e Boxe Chinês - Kwan Kun Mooca" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca">
+        </div>
+    </header>
+    <br />
+    @if (TempData["Erro"] != null)
+    {
+        <section>
+            <div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                @TempData["Erro"]
+            </div>
+        </section>
+    }
+    <br />
+    <h1 style="text-align:center"><small>Erro ao enviar mensagem.</small></h1><br />
+    <h2 style="text-align:center"><small>Estamos verificando o ocorrido e trabalhando para corrigir o mais rápido possível.<br />
+        Enquanto isso, entre em contato com a gente pelo Telefone: (11) 3294-7902</small></h2><br /><br />
+    <p style="text-align:center; font-size:17px;">@Html.ActionLink("Retornar para a página inicial", "Index")</p>
+    <input type="hidden" name="erroSuccess" id="msgErroSuccess" value="@ViewBag.msgErroSuccess" />
+    <input type="hidden" name="erroError" id="msgErroError" value="@ViewBag.msgErroError" />
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($('#modelValid').val() == "sendMail") {
+            $('#formEnvio').reset();
+        }
+    });
+</script>

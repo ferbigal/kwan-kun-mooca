@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Academia de Kung Fu e Boxe Chinês - Kwan Kun Mooca";
+}
+
+<div class="container-fluid fundo" id="fundo">
+    <header>
+        <div class="container-fluid">
+            <br>
+            <img src="~/Content/img/header_kwan_kun.png" alt="Kung Fu e Boxe Chinês - Kwan Kun Mooca" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca">
+        </div>
+    </header>
+    <br />
+    @if (TempData["Sucesso"] != null)
+    {
+        <section>
+            <div class="alert alert-info alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                @TempData["Sucesso"]
+            </div>
+        </section>
+    }
+    <br />
+    <h1 style="text-align:center"><small>Sua mensagem sobre " @ViewBag.assunto " foi enviada.</small></h1><br />
+    <h2 style="text-align:center"><small>Entraremos em contato assim que possível.</small></h2><br /><br />
+    <p style="text-align:center; font-size:17px;">@Html.ActionLink("Retornar para a página inicial", "Index")</p>
+</div>

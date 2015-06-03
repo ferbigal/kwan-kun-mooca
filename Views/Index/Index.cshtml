@@ -1,0 +1,325 @@
+﻿@using SiteKwanKunMooca.Models
+
+@model ContatoMOD
+
+@{
+    ViewBag.Title = "Academia de Kung Fu e Boxe Chinês - Kwan Kun Mooca";
+}
+
+<div class="container-fluid fundo" id="fundo">
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" id="menu">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <!--.btn-navbar: classe usada como alternador para conteudo colapsavel-->
+                <button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="#apresentacao" title="Apresentação">Apresentação</a></li>
+                        <li><a href="#mapa" title="Onde Estamos">Localização</a></li>
+                        <li><a href="#modalidades" title="Modalidades de Aula">Modalidades</a></li>
+                        <li><a href="#competicoes" title="Competições de Kung Fu e Boxe Chinês">Competições</a></li>
+                        <li><a href="#instrutores" title="Instrutores">Instrutores</a></li>
+                        <li><a href="#iniciar" title="Como Iniciar">Como Iniciar</a></li>
+                        <li><a href="#beneficios" title="Benefícios do Kung Fu e Boxe Chinês">Benefícios</a></li>
+                        <li><a href="#contato" title="Entrar em Contato">Contato</a></li>
+                        <li><a href="https://www.facebook.com/kwankunmooca" target="blank" title="Nossa página no Facebook"><i class="fa fa-facebook-official"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container-fluid">
+            <br>
+            <img src="~/Content/img/header_kwan_kun.png" alt="Kung Fu e Boxe Chinês - Kwan Kun Mooca" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca">
+        </div>
+    </header>
+
+    <div class="corpo">
+        <!--Abrindo div Apresentação-->
+        <div id="apresentacao"><br><br></div>
+        <div class="container-fluid">
+            <h1 class="titulo"><small>Apresentação</small></h1>
+            <div class="container-fluid">
+                <h2><small>Academia</small></h2>
+                <p>Inaugurada em 2013, a Academia Kwan Kun – MOOCA, é uma filial da Academia Kwan Kun, que foi fundada em 2008 pelo Professor Marco Cardoso, onde sua sede hoje está no bairro da Vila Mariana em São Paulo. A Academia Kwan Kun desenvolve um trabalho sério visando proporcionar o bem-estar e a qualidade de vida de seus alunos, respeitando os objetivos e limites de cada um. A Academia Kwan Kun é filiada a Federação Paulista e Confederação Brasileira de Kung Fu e tornou-se conhecida também em participações de competições nacionais e internacionais.</p>
+                <h2><small>Kung Fu</small></h2>
+                <p>Kung Fu é uma Arte Marcial Chinesa, criada há mais de 5000 anos. Seus movimentos de ataque e defesa foram inspirados na natureza e na observação dos movimentos dos animais. O Kung Fu é dividido em estilos internos e externos, que variam de acordo com suas características. O Kung Fu também é conhecido como Wushu e Kuoshu.</p>
+                <p>O estilo que praticamos é o Choy Lay Fut, um estilo do sul da China que tem características básicas de cinco animais: Tigre (Fu), Pantera (Pao), Garça (Hok), Serpente (Se) e Dragão (Lung). É um dos mais populares estilos de Kung Fu, por ser forte, rápido, diversificado e eficaz. Combina velocidade, força e beleza, uma multiplicidade de técnicas de chutes e rasteiras e técnicas de curto, médio e longo alcance. Incluem-se ainda técnicas com armas tradicionais como, bastão, facão, lança, espada, corrente, entre outras. Além disso, é um estilo muito eficiente para luta de competição.</p>
+                <h2><small>Boxe Chinês</small></h2>
+                <p>Boxe Chinês é a parte de luta desportiva da arte marcial chinesa, podendo ser de forma amadora ou profissional. Nessa modalidade, o aluno aprende técnicas de socos, chutes, quedas, projeções, bloqueios, defesas e esquivas. O Boxe Chinês ainda é uma excelente forma de condicionamento físico.</p>
+            </div>
+        </div><!--Fechando div Apresentação-->
+        <!--Abrindo div Mapa da Academia-->
+        <div id="mapa"><br><br></div>
+        <div class="container-fluid" id="mapa">
+            <h1 class="titulo"><small>Localização</small></h1>
+            <div class="container-fluid">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2040223361314!2d-46.60240240000003!3d-23.561114899999982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce594f527167d3%3A0x5d6b5a548b8c5de!2sR.+Curupac%C3%AA%2C+46+-+Mooca%2C+S%C3%A3o+Paulo+-+SP%2C+03120-010!5e0!3m2!1spt-BR!2sbr!4v1431676431409" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div><!--Fechando div Mapa da Academia-->
+        <!--Abrindo div Modalidades-->
+        <div id="modalidades"><br><br></div>
+        <div class="container-fluid">
+            <h1 class="titulo"><small>Modalidades</small></h1>
+            <h2><small>Kung Fu - Infantil</small></h2>
+            <p>O nosso trabalho com as crianças visa ajudar na formação de um bom caráter, desenvolvendo disciplina, respeito e concentração. Isso faz com que elas melhorem o seu comportamento na escola e em casa. Além disso, ajuda na formação de um cidadão melhor. Principais benefícios na fase infantil: disciplina, concentração, respeito e confiança, melhoria na coordenação motora, responsabilidade, espírito de grupo, aumento na frequência escolar, melhoria das relações entre pais e filhos. A nossa escola oferece horários especiais e exclusivos para crianças à partir dos 05 anos. Abaixo dessa idade, por favor entrar em <a href="#contato" title="Entrar em Contato">contato</a>.</p>
+            <section class="carousel slide" id="carousel-kf-kids">
+                <div class="carousel-inner">
+                    <section class="active item"><img src="~/Content/img/kung fu infantil_1.jpg" alt="Kung Fu Infantil" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <section class="item"><img src="~/Content/img/kung fu infantil_2.jpg" alt="Kung Fu Infantil" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <section class="item"><img src="~/Content/img/kung fu infantil_3.jpg" alt="Kung Fu Infantil" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <section class="item"><img src="~/Content/img/kung fu infantil_4.jpg" alt="Kung Fu Infantil" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                </div>
+                <a href="#carousel-kf-kids" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+                <a href="#carousel-kf-kids" class="carousel-control right" data-slide="next">&rsaquo;</a>
+            </section>
+            <h2><small>Kung Fu - Adulto</small></h2>
+            <p>Vão de encontro a qualquer tipo de objetivo. Os programas estão formulados dentro de uma estrutura que propicia o desenvolvimento individual progressivo, passo a passo, como regem as Artes Marciais Chinesas. O treinamento das técnicas consiste em alongamento, condicionamento, meditação, técnicas especificas de defesa pessoal e armas chinesas. </p>
+            <section class="carousel slide" id="carousel-kf-adulto">
+                <div class="carousel-inner">
+                    <section class="active item"><img src="~/Content/img/kung fu adulto_1.jpg" alt="Kung Fu Adulto" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <section class="item"><img src="~/Content/img/kung fu adulto_2.jpg" alt="Kung Fu Adulto" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <section class="item"><img src="~/Content/img/kung fu adulto_3.jpg" alt="Kung Fu Adulto" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <!--<section class="item"><img src="~/Content/img/kung fu adulto_4.jpg" alt="Kung Fu Adulto" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>-->
+                </div>
+                <a href="#carousel-kf-adulto" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+                <a href="#carousel-kf-adulto" class="carousel-control right" data-slide="next">&rsaquo;</a>
+            </section>
+            <h2><small>Kung Fu - Sênior</small></h2>
+            <p>Os nossos programas vão de encontro com qualquer tipo de objetivo, inclusive para aqueles que acham que já não podem mais praticar, mas todos podem! O Kung Fu pode ser praticado por todas as idades, desde que sejam respeitados os limites de cada um. Os benefícios são inúmeros nessa fase. Em nossa escola, também temos aulas para esse grupo especial. Não existem barreiras para quem tem vontade. Basta acreditar e praticar!</p>
+            <section class="carousel slide" id="carousel-kf-senior">
+                <div class="carousel-inner">
+                    <section class="active item"><img src="~/Content/img/kung fu senior_1.png" alt="Kung Fu Senior" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <!--<section class="item"><img src="~/Content/img/kung fu senior_2.jpg" alt="Kung Fu Senior" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>-->
+                    <!--<section class="item"><img src="~/Content/img/kung fu senior_3.jpg" alt="Kung Fu Senior" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>-->
+                    <!--<section class="item"><img src="~/Content/img/kung fu senior_4.jpg" alt="Kung Fu Senior" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>-->
+                </div>
+                <a href="#carousel-kf-senior" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+                <a href="#carousel-kf-senior" class="carousel-control right" data-slide="next">&rsaquo;</a>
+            </section>
+            <h2><small>Boxe Chinês</small></h2>
+            <p>A nossa escola oferece programas exclusivos de Boxe Chinês independente da pratica do Kung Fu, para os amantes em luta, em densidades diferentes para objetivos diferentes como: Semi Contato, Contato Moderado e Contato Total. Permitindo desta forma uma especialização em luta, sem perder os benefícios e tradição da Arte Marcial Chinesa. Também oferecemos aulas adicionais de Boxe Chinês aos praticantes do Kung Fu, para os mais interessados em luta.</p>
+            <section class="carousel slide" id="carousel-boxe-chines">
+                <div class="carousel-inner">
+                    <section class="active item"><img src="~/Content/img/boxe chines_1.jpg" alt="Boxe Chinês" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <section class="item"><img src="~/Content/img/boxe chines_2.jpg" alt="Boxe Chinês" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <section class="item"><img src="~/Content/img/boxe chines_3.jpg" alt="Boxe Chinês" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <!--<section class="item"><img src="~/Content/img/boxe chines_4.jpg" alt="Boxe Chinês" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>-->
+                </div>
+                <a href="#carousel-boxe-chines" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+                <a href="#carousel-boxe-chines" class="carousel-control right" data-slide="next">&rsaquo;</a>
+            </section>
+        </div><!--Fechando div Modalidades-->
+        <!--Abrindo div Competicoes-->
+        <div id="competicoes"><br><br></div>
+        <div class="container-fluid">
+            <h1 class="titulo"><small>Competições</small></h1>
+            <p>Assim como priorizamos a qualidade de vida de nossos alunos, também desenvolvemos um trabalho visando competições, para quem gosta de alta performance. Participamos de competições de nível nacional e internacional, procurando oferecer essa experiência de vida desafiadora aos nossos alunos. ACREDITE EM VOCÊ E VENHA FAZER PARTE DESTA EQUIPE!</p>
+            <section class="carousel slide" id="competicao_carouosel">
+                <div class="carousel-inner">
+                    <section class="active item"><img src="~/Content/img/competicao1.jpg" alt="Competição Kung Fu" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <section class="item"><img src="~/Content/img/competicao2.png" alt="Competição Kung Fu" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <section class="item"><img src="~/Content/img/competicao3.png" alt="Competição Kung Fu" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <section class="item"><img src="~/Content/img/competicao4.jpg" alt="Competição Kung Fu" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                    <section class="item"><img src="~/Content/img/competicao5.png" alt="Competição Kung Fu" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca"></section>
+                </div>
+                <a href="#competicao_carouosel" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+                <a href="#competicao_carouosel" class="carousel-control right" data-slide="next">&rsaquo;</a>
+            </section>
+        </div><!--Fechando div Competicoes-->
+        <!--Abrindo div Instrutores-->
+        <div id="instrutores"><br><br></div>
+        <div class="container-fluid">
+            @{
+                var anoNow = DateTime.Now.Year;
+                var tempoTreinoR = anoNow - 2002;
+                var tempoTreinoL = anoNow - 2002;
+                var tempoTreinoD = anoNow - 2013;
+            }
+            <h1 class="titulo"><small>Instrutores</small></h1>
+            <div class="container-fluid">
+                <!--Linha Renato-->
+                <div class="container-fluid span4">
+                    <div class="span3 pull-right">
+                        <img src="~/Content/img/renato.jpg" class="img-circle img" alt="Instrutor Kung Fu" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca">
+                    </div>
+                </div>
+                <div class="container-fluid span3">
+                    <dl>
+                        <dt>Nome:</dt>
+                        <dd>Renato Sanchez</dd>
+                        <dt>Posição Hierárquica:</dt>
+                        <dd>Instrutor</dd>
+                        <dt>Tempo de Treino:</dt>
+                        <dd>@tempoTreinoR anos</dd>
+                        <dt>Graduação Choy Lay Fut:</dt>
+                        <dd>Faixa Preta 1º Grau</dd>&nbsp;
+                    </dl>
+                </div>
+                <!--Linha Leo-->
+                <div class="container-fluid span4">
+                    <div class="span3 pull-right">
+                        <img src="~/Content/img/leo.jpg" class="img-circle img" alt="Instrutor Kung Fu" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca">
+                    </div>
+                </div>
+                <div class="container-fluid span3">
+                    <dl>
+                        <dt>Nome:</dt>
+                        <dd>Leonardo Sanchez</dd>
+                        <dt>Posição Hierárquica:</dt>
+                        <dd>Instrutor</dd>
+                        <dt>Tempo de Treino:</dt>
+                        <dd>@tempoTreinoL anos</dd>
+                        <dt>Graduação Choy Lay Fut:</dt>
+                        <dd>Faixa Preta 1º Grau</dd>&nbsp;
+                    </dl>
+                </div>
+                <!--Linha Diego-->
+                <div class="container-fluid span4">
+                    <div class="span3 pull-right">
+                        <img src="~/Content/img/diego.jpg" class="img-circle img" alt="Instrutor Kung Fu" title="Kung Fu e Boxe Chinês - Kwan Kun Mooca">
+                    </div>
+                </div>
+                <div class="container-fluid span3">
+                    <dl>
+                        <dt>Nome:</dt>
+                        <dd>Diego</dd>
+                        <dt>Posição Hierárquica:</dt>
+                        <dd>Aux. Instrutor</dd>
+                        <dt>Tempo de Treino:</dt>
+                        <dd>@tempoTreinoD anos</dd>
+                        <dt>Graduação Choy Lay Fut:</dt>
+                        <dd>Faixa Azul</dd>
+                    </dl>
+                </div>
+            </div>
+        </div><!--Fechando div Instrutores-->
+        <!--Abrindo div Como Iniciar-->
+        <div id="iniciar"><br><br></div>
+        <div class="container-fluid">
+            <h1 class="titulo"><small>Como Iniciar</small></h1>
+            <h2><small>Programa de Quatro Semanas de Treino</small></h2>
+            <p>O objetivo desse programa é fazer com que você tenha uma experiência prática e possa conhecer o nosso trabalho. Nessa fase, são ensinadas técnicas básicas de socos e chutes, defesa pessoal, respiração, alongamento e condicionamento, além de uma breve teoria sobre o Kung Fu estilo Choy Lay Fut, o qual ensinamos em nossa escola.</p>
+            <p><strong>Kung Fu: R$119,00</strong> - Incluindo 4 semanas de treino e uniforme grátis (Colete e Calça).</p>
+            <p><strong>Boxe Chinês: R$129,00</strong> - Incluindo 4 semanas de treino e uniforme grátis (Calção, Camiseta e Luva).</p>
+        </div><!--Fechando div Como Iniciar-->
+        <!--Abrindo div Beneficios-->
+        <div id="beneficios"><br><br></div>
+        <div class="container-fluid">
+            <h1 class="titulo"><small>Benefícios</small></h1>
+            <h2><small>Benefícios do Kung Fu</small></h2>
+            <p>O número de praticantes de atividades derivadas das Artes Marciais é notável e crescente, e pode-se afirmar, sem receio de erro, que hoje existem mais praticantes nas modalidades de Artes Marciais do que nos chamados esporte de tradição olímpica. A Arte Marcial como atividade corporal vem crescendo a cada ano devido também aos seus benefícios ja comprovados, reduz o risco de desenvolvimento de doenças crônicas e ainda passa a ser um fator chave para aumentar a longevidade e qualidade de vida.</p>
+            <div class="container-fluid span4">
+                <h2><small>Benefícios Físicos</small></h2>
+                <ul>
+                    <li>Controle do Peso Corporal</li>
+                    <li>Melhor Mobilidade Articular</li>
+                    <li>Melhor Resistência Física</li>
+                    <li>Aumento da Densidade Ósea</li>
+                    <li>Melhor Força Muscular</li>
+                    <li>Diminuição da Pressão Arterial</li>
+                    <li>Melhor Flexibilidade</li>
+                </ul>
+            </div>
+            <div class="container-fluid span4">
+                <h2><small>Benefícios Psicossociais</small></h2>
+                <ul>
+                    <li>Aumento da Auto-estima (Consciência corporal)</li>
+                    <li>Aumento da Autoconfiança (Segurança pessoal)</li>
+                    <li>Diminuição de Processos Depressivos (Consciência energética)</li>
+                    <li>Alivia o Stress (Consciência do presente)</li>
+                    <li>Aumenta o Bem-estar (Consciência do equilíbrio – Físico/Mental)</li>
+                </ul>
+            </div>
+            <div class="container-fluid span4">
+                <h2><small>Benefícios na Fase Escolar</small></h2>
+                <ul>
+                    <li>Aumento na Freqüência Escolar (Disposição)</li>
+                    <li>Aumento do Desempenho Acadêmico/Vocacional (Concentração)</li>
+                    <li>Aumento da Responsabilidade (Vontade)</li>
+                    <li>Diminuição da Delinqüência e Reincidência (Saúde)</li>
+                    <li>Melhoria das Relações entre Pais e Filhos (Disciplina)</li>
+                </ul>
+            </div>
+            <div class="container-fluid span4">
+                <h2><small>Benefícios na Fase Infantil</small></h2>
+                <ul>
+                    <li>Desenvolvimento da Disciplina (Perseverança)</li>
+                    <li>Desenvolvimento da Concentração (Objetivos)</li>
+                    <li>Respeito e Confiança (Social)</li>
+                    <li>Desenvolvimento da Coordenação e Cooperação (Integração)</li>
+                    <li>Desenvolvimento da Responsabilidade (Conscientização)</li>
+                    <li>Espirito de Grupo (Liderança)</li>
+                </ul>
+            </div>
+        </div><!--Fechando div Beneficios-->
+        <!--Abrindo div Contato-->
+        <div id="contato"><br><br></div>
+        <div class="container-fluid">
+            <h1 class="titulo"><small>Contato</small></h1>
+            <div class="container-fluid span3">
+                <h2><small>Endereço:</small></h2>
+                <p>Rua Curupacê, 46, Mooca, São Paulo</p>
+                <h2><small>Telefone:</small></h2>
+                <p>(11) 3294-7902</p>
+            </div>
+            <div class="container-fluid span5">
+                <h2><small><i class="fa fa-comment-o"></i> Envie uma mensagem:</small></h2>
+                <p><small>Entraremos em contato assim que possível</small></p>
+                @using (Html.BeginForm())
+                {
+                    <input type="hidden" name="modelValid" id="modelValid" value="@ViewBag.modelValid" />
+                    <div class="control-group">
+                        <label for="nome">Nome  @Html.ValidationMessageFor(x => x.nome)</label>
+                        @Html.TextBoxFor(x => x.nome, new { @class = "input-xxlarge", @placeholder = "Digite seu Nome" })
+                    </div>
+                    <div class="control-group">
+                        <label for="email">E-mail   @Html.ValidationMessageFor(x => x.email)</label>
+                        @Html.TextBoxFor(x => x.email, new { @class = "input-xxlarge", @placeholder = "seuemail@exemplo.com.br" })
+                    </div>
+                    <div class="control-group">
+                        <label for="telefone">Telefone  @Html.ValidationMessageFor(x => x.telefone)</label>
+                        @Html.TextBoxFor(x => x.telefone, new { @class = "input-xxlarge", @id = "inputTelefone", @placeholder = "(11) 1111-1111" })
+                    </div>
+                    <div class="control-group">
+                        <label for="assunto">Assunto    @Html.ValidationMessageFor(x => x.assunto)</label>
+                        @Html.TextBoxFor(x => x.assunto, new { @class = "input-xxlarge", @placeholder = "Digite o motivo do contato" })
+                    </div>
+                    <div class="control-group">
+                        <label for="msg">Mensagem   @Html.ValidationMessageFor(x => x.msg)</label>
+                        @Html.TextAreaFor(x => x.msg, new { @class = "input-xxlarge", @placeholder = "Digite aqui sua mensagem, dúvida, sugestão...", @rows = "3" })
+                    </div>
+                    <div id="divbotoes">
+                        <button class="btn"><i class="fa fa-envelope"></i>  Enviar</button>
+                    </div>
+                    <p><small>Ou entre em contato pela nossa página do <a href="https://www.facebook.com/messages/1623083174591590" target="blank" title="Entrar em Contato direto pela página do Facebook">Facebook</a>.</small></p>
+                }
+            </div>
+        </div><!--Fechando div Contato-->
+
+    </div><!--Fechando div Corpo-->
+
+</div><!--Fechando div Fundo-->
+
+<script type="text/javascript">
+    $('.carousel').carousel({
+        interval: 5000
+    });
+
+    $("#inputTelefone").mask("(00) 0000-00009");
+
+    $(document).ready(function () {
+        if ($('#modelValid').val() == "modelInvalid") {
+            $('html, body').animate({ scrollTop: $('#contato').position().top }, 'fast');
+            $('#modelValid').val("modelValid");
+            bootbox.alert("Por favor verifique os dados do contato.");
+        }
+    });
+</script>
