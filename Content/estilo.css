@@ -1,82 +1,87 @@
 body {
-	padding-top: 40px;
+    padding-top: 40px;
 }
 
-.fundo{
-	background-color: rgba(5, 5, 5, 0.85);
-	width: 73%;
-	margin-left: 12%;
-	height: 100%;
-	border-radius: 5px;
-	filter: alpha(opacity=85); /* IE 7 e anteriores */
-		/* IE8 */
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+.fundo {
+    background-color: rgba(5, 5, 5, 0.85);
+    width: 73%;
+    margin-left: 12%;
+    height: 100%;
+    border-radius: 5px;
+    filter: alpha(opacity=85); /* IE 7 e anteriores */
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
 }
 
-.fundo p{
-    text-align: justify;
+    .fundo p, table {
+        text-align: justify;
+    }
+
+#horario {
+    margin-left: 18%;
+    border-radius: 10px;
 }
 
-#menu{
-	width: 84%;
-	margin-left: 8%;
+#menu {
+    width: 84%;
+    margin-left: 8%;
 }
 
-#menu ul{
-	margin-left: 8.5%;
+    #menu ul {
+        margin-left: 8.5%;
+    }
+
+li, p, dt, dl, label, h5, h1 small, h2 small, td {
+    color: #FFF;
 }
 
-li,p,dt,dl,label,h5,h1 small,h2 small{
-	color: #FFF;
+.fundofooter i {
+    color: #999999;
+    font-size: 15px;
 }
 
-.fundofooter i{
-	color: #999999;
-	font-size: 15px;
+.fundofooter div {
+    width: 20%;
+    margin-left: 39%;
+    text-align: center;
 }
 
-.fundofooter div{
-	width: 20%;
-	margin-left: 39%;
-	text-align: center;
+.titulo {
+    text-align: center;
 }
 
-.titulo{
-	text-align: center;
+.img {
+    border: 1px solid white;
 }
 
-.img{
-	border: 1px solid white;
+textarea {
+    resize: none;
 }
 
-textarea{
-	resize: none;
-}
-
-.field-validation-error{
+.field-validation-error {
     color: #ff0000;
 }
 
-body{
-  background: url(img/bg.jpg) no-repeat center center;
-  background-attachment: fixed;
-  background-size: cover; /*Css padrão*/
-  -webkit-background-size: cover; /*Css safari e chrome*/
-  -moz-background-size: cover; /*Css firefox*/
-  -ms-background-size: cover; /*Css IE não use mer#^@%#*/
-  -o-background-size: cover; /*Css Opera*/
+body {
+    background: url(img/bg.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover; /*Css padrão*/
+    -webkit-background-size: cover; /*Css safari e chrome*/
+    -moz-background-size: cover; /*Css firefox*/
+    -ms-background-size: cover; /*Css IE não use mer#^@%#*/
+    -o-background-size: cover; /*Css Opera*/
 }
 
-.fundofooter{
-	background-color: rgba(5, 5, 5, 0.85);
-	width: 73%;
-	margin-left: 12%;
+.fundofooter {
+    background-color: rgba(5, 5, 5, 0.85);
+    width: 73%;
+    margin-left: 12%;
     margin-bottom: 0.025%;
-	margin-top: 0.075%;
-	border-radius: 5px;
-	filter: alpha(opacity=85); /* IE 7 e anteriores */
-		/* IE8 */
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+    margin-top: 0.075%;
+    border-radius: 5px;
+    filter: alpha(opacity=85); /* IE 7 e anteriores */
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
 }
